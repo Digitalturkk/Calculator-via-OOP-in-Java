@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Calculator{
     Calculator(){
-        //We need him only for declaring new objects "new Calculator()"
+        // We need him only for declaring new objects "new Calculator()"
     }
 
-    //Our methods for Calculator
+    // Our methods for Calculator
     public int add(int a, int b){return a+b;}
     public int subtract(int a, int b){return a-b;}
     public int multiply(int a, int b){return a*b;}
@@ -28,8 +28,8 @@ public class Calculator{
         System.out.println("add, subtract, multiply, divide or modulo?");
         String method = doing.nextLine(); // Read user input(str)
 
-        //Printing out what we need to calculate based on our user's choose!
-        //We may use switch here, but I prefer if-else construction
+        // Printing out what we need to calculate based on our user's choose!
+        // We may use switch here, but I prefer if-else construction
         if(method.equals("add")){
             System.out.println(myCalculator.add(a,b));
         } else if(method.equals("subtract")){
