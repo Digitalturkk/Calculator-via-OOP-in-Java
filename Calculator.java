@@ -30,16 +30,12 @@ public class Calculator{
 
         // Printing out what we need to calculate based on our user's choose!
         // We may use switch here, but I prefer if-else construction
-        if(method.equals("add")){
-            System.out.println(myCalculator.add(a,b));
-        } else if(method.equals("subtract")){
-            System.out.println(myCalculator.subtract(a,b));
-        }else if(method.equals("mutiply")){
-            System.out.println(myCalculator.multiply(a,b));
-        }else if(method.equals("divide")){
-            System.out.println(myCalculator.divide(a,b));
-        }else if(method.equals("modulo")){
-            System.out.println(myCalculator.modulo(a,b));
+        switch (method) {
+            case "add" -> System.out.println(myCalculator.add(a, b));
+            case "subtract" -> System.out.println(myCalculator.subtract(a, b));
+            case "multiply" -> System.out.println(myCalculator.multiply(a, b));
+            case "divide" -> System.out.println(myCalculator.divide(a, b));
+            case "modulo" -> System.out.println(myCalculator.modulo(a, b));
         }
 
         System.out.print("Karabakh is Azerbaijan!");
