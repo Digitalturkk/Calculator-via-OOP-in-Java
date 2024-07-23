@@ -60,7 +60,7 @@ public class Calculator{
         Scanner doing = new Scanner(System.in);  // Create a Scanner object
 
         System.out.println("What you want to do?");
-        System.out.println("add, subtract, multiply, divide, modulo, factorial?");
+        System.out.println("add, subtract, multiply, divide, modulo, factorial, permutation?");
         String method = doing.nextLine(); // Read user input(str)
 
         // Printing out what we need to calculate based on our user's choose!
